@@ -13,6 +13,7 @@ from controllers.AuthController import LoginPage
 
 import sys
 
+# executa se for o arquivo main
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     quiz = LoginPage()
