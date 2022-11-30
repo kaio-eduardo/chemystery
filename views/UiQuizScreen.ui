@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>699</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Form {
+background-color: transparent;
+}</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>700</width>
+       <height>500</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame {		
+	
+	border-image: url(:/images/images/carregamento.png);
+}
+
+QPushButton {
+	font-size: 12pt;
+	font-weight: bold;
+	color: rgba(165, 4, 255, 255);
+	background-color: rgba(255,255,255,255);
+	border-radius: 25.5px;
+}
+
+QPushButton:hover {
+	font-size:13pt;
+}
+
+QPushButton:pressed {
+	background-color: rgba(255,255,255,100)
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblQuestion">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>99</y>
+        <width>540</width>
+        <height>130</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: rgba(165, 4, 255, 255);
+padding: 0px 10px;
+font-size:16pt;
+border-radius: 60px;
+font-weight: bold;
+text-align: center;</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resposta1">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>240</y>
+        <width>270</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resposta2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>240</y>
+        <width>270</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resposta3">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>310</y>
+        <width>270</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resposta4">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>310</y>
+        <width>270</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblTimer">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>15</y>
+        <width>70</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lblTimer {
+font-size: 27pt;
+color: white;
+text-align: center;
+border-radius: 35px;
+border: 2px solid rgba(255,255,255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>40</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backBtn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backBtn {
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+	color: white
+}
+</string>
+      </property>
+      <property name="text">
+       <string></string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>700</width>
+       <height>500</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame_3 {	
+	border-image: url(:/images/images/carregamento.png);
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="btnBack">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>320</y>
+        <width>300</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnBack {
+border: none;
+background-color: white;
+border-radius: 5px;
+padding: 10px;
+font-weight: bold;
+color: rgba(165,4,255, 255);
+font-size:10pt
+}
+
+QPushButton#btnBack:hover {
+	background-color: transparent;
+	color: white;
+	border: 2px solid white
+}</string>
+      </property>
+      <property name="text">
+       <string>VOLTAR PRA TELA INICIAL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resultlbl">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>70</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#resultlbl {
+	font-weight: bold;
+	color: white;
+	font-size: 10pt
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnClose">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnClose {
+	border: none;
+	background-color: transparent;
+	color: rgba(255,255,255,255);
+	border-radius: 10px;
+	padding: 10px;
+	font-weight: bold;
+	font-size:10pt
+}
+
+QPushButton#btnClose:hover {
+	background-color: rgba(255,255,255,200);
+	color: rgba(165,4,255,255)
+}</string>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>700</width>
+       <height>500</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame_2 {
+border-image: url(:/images/images/carregamento.png);
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="prepLbl">
+      <property name="geometry">
+       <rect>
+        <x>305</x>
+        <y>160</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 45pt;
+color: white;
+font-weight: bold;
+border-radius: 50px;
+border: 2px solid white</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resQuiz.qrc"/>
+ </resources>
+ <connections/>
+</ui>

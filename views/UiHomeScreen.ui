@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralWidget {
+background-color: transparent;
+}</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>700</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>700</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame {
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	background-color: rgba(255,255,255, 255);	
+}
+
+QToolButton {
+padding: 5px ;
+color: white;
+background-color: rgba(165, 4, 255, 255);
+border: 2px solid white;
+border-radius: 25px;
+font-size: 15pt;
+font-weight: bold;
+}
+
+QToolButton:hover {
+	background-color: rgb(255,255,255);
+	color: rgba(165, 4, 255, 255);
+	border: 2px solid rgba(165, 4, 255, 255);
+}
+
+QToolButton:pressed {
+	background-color: rgb(150,150,150)
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>2</x>
+         <y>2</y>
+         <width>320</width>
+         <height>496</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_2 {
+background-color: rgba(165,4,255,255);
+padding: 2px
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>75</x>
+         <y>50</y>
+         <width>170</width>
+         <height>170</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 85px;
+image: url(:/images/images/icon 1.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblUser">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>300</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+font-size: 20pt;
+color: white;
+font-weight: bold</string>
+       </property>
+       <property name="text">
+        <string>KAIOOFERA</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnClose">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>10</y>
+         <width>28</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnClose {
+border: none;
+background-color: transparent;
+color: rgba(150,0,0,120);
+border-radius: 10px;
+font-weight: bold;
+padding: 5px 10px 6px 10px;
+font-size:10pt
+}
+
+QPushButton#btnClose:hover {
+	background-color: rgba(255,0,0,100);
+	color: black
+}</string>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="startBtn">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>120</y>
+         <width>250</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>    START</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resHome.qrc">
+         <normaloff>:/images/images/1200px-Circle-icons-rocket.svg.png</normaloff>:/images/images/1200px-Circle-icons-rocket.svg.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="rankBtn">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>180</y>
+         <width>250</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>    RANK</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resHome.qrc">
+         <normaloff>:/images/images/1024px-Circle-icons-trophy_(dark).svg.png</normaloff>:/images/images/1024px-Circle-icons-trophy_(dark).svg.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="gamesBtn">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>240</y>
+         <width>250</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>    GAMES</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resHome.qrc">
+         <normaloff>:/images/images/icon_games.png</normaloff>:/images/images/icon_games.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>300</number>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::DelayedPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+       <property name="arrowType">
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="aboutBtn">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>300</y>
+         <width>250</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>    ABOUT</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resHome.qrc">
+         <normaloff>:/images/images/429880.png</normaloff>:/images/images/429880.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>480</y>
+         <width>213</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 6pt;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>Todos os direitos reservados ao @KaioMalek, por hora</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>330</y>
+         <width>220</width>
+         <height>120</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/images/images/logo4.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="questionPage">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>661</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:72pt; color:#ffaaff;&quot;&gt;PAGINA 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resHome.qrc"/>
+ </resources>
+ <connections/>
+</ui>

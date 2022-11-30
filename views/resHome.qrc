@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/icon_about.png</file>
+    <file>images/icon_games.png</file>
+    <file>images/icon 1.png</file>
+    <file>images/logo4.png</file>
+    <file>images/1200px-Circle-icons-rocket.svg.png</file>
+    <file>images/1024px-Circle-icons-trophy_(dark).svg.png</file>
+    <file>images/429880.png</file>
+  </qresource>
+</RCC>
